@@ -1,0 +1,304 @@
+
+* { /* style untuk semua elemen di html */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html { /*style untuk html*/
+    scroll-behavior: smooth;
+}
+
+body { /*style body*/
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #fff;
+    color: #333;
+    line-height: 1.6;
+}
+
+.navbar { /* style bar navigasi  */
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    padding: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.nav-container { /*style untuk container navigasi*/
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-logo { /*style untuk logo navigasinya */
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.nav-logo img{ /*style untuk gambar logo*/
+    height: 65px;
+    width: 65px;
+}
+
+
+.nav-menu { /*style untuk navigasinya kayak ul, dan li*/ 
+    display: flex;
+    list-style: none;
+    gap: 40px;
+}
+
+.nav-link {/*style untuk class nav-link yang ada pada navigasi menu*/
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.nav-link:hover { /*style apabila ada cursor di nav-link/navigasi*/
+    color: #ffb3d9;
+}
+
+.nav-link::after { /*style setelah navigasi diclick*/
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #ffb3d9;
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover::after { /*style setelah cursor berada di atas nav-link*/
+    width: 100%; 
+}
+
+.pembuka{ /*sttyle untuk halaman pembuka*/
+    margin: 50px;
+    padding: 50px;
+    width: 50%;
+}
+
+.pembuka h1{ /*style untuk halaman pembuka heading 1*/
+    font-weight: bold;
+    font-size: 60px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: block;
+}
+
+.pembuka p{ /*style untuk halaman pembuka paragraf*/
+    font-size: 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 20px;
+}
+
+.btn-mulai{ /*style untuk button/tombol */
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 15px 40px;
+    border: none;
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.btn-mulai:hover{ /*style jika ada cursor yang berada di atas button*/
+    transform: translateY(-3px); /*membuat button naik sedikit*/
+    box-shadow: 0 8px 25px rgba(102, 126, 234, 0.6); /*membuat adanya shadow pada bawah button saat ada cursor*/
+}
+
+
+.btn-mulai a { /*mengubah warna teks a*/
+    color: white;
+    text-decoration: none;
+}
+
+.tentang { /*style untuk halaman tentang kami*/
+    padding: 80px 40px;
+}
+
+.tentang h1{ /*style untuk mengubah teks heading 1 pada halaman tentang */
+    font-size: 2.5em;
+    margin-bottom: 50px;
+    color: #333;
+    text-align: center;
+}
+.tentang .penjelasan{ /*style untuk halaman penjelasan paragraf*/
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    gap: 80px;
+    align-items: center;
+    justify-content: center;
+}
+
+.tambahan { /**/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 80px;
+}
+
+.tambahan-lagi { /*style untuk tambahan info*/
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.tambahan-lagi h3 { /*style untuk heading 3 pada halaman tambahan-lagi*/
+    font-size: 2.5em;
+    color: #667eea;
+    margin-bottom: 10px;
+}
+
+.tambahan-lagi p {/*style buat paragraf pada halaman tambahan-lagi*/
+    color: #666;
+    font-size: 1.1em;
+}
+
+.ceo{ /*mengatur halaman ceo*/
+    background-image: url(pink.jpg);
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 100px;
+}
+.ceo h1{/*mengatur font pada heading 1 di halaman/div ceo*/
+    font-size: 2.5em;
+    margin-bottom: 50px;
+    color: #333;
+    text-align: center;
+}
+
+.ceo .anggota{ /*mengatur lebih spesifik di div anggota*/
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+    margin: 20px;
+}
+
+.ceo .anggota .orang{ /*mengatur layout anggota teks dengan gambarnya masing-masing*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.ceo .anggota .orang img{ /*mengatur gambar orangnya*/
+    object-fit: cover;
+    object-position: center;
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    border: 1px solid #667eea;
+    
+}
+
+.anggota p{/*mengatur teks paragraf pada anggota (jadi ngatur namanya dmn)*/
+    text-align: center;
+    align-items: center;
+    font-weight: bold;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.1em;
+}
+
+.anggota img:hover{ /*mengatur kalo ada mouse yang menimpah gambar*/
+    transform: translateY(-10px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+.keunggulan h1{ /*mengatur heading 1 pada keunggulan*/
+    font-size: 2.5em;
+    margin-bottom: 50px;
+    color: #333;
+    text-align: center
+}
+
+.keunggulan { /*mengatur halaman/div keunggulan*/
+    padding: 80px 40px;
+    background: #f8f9fa;
+}
+
+
+.keunggulan-grid { /*mengatur halaman keunggulan-grid yang namanya grid soalnya displaynya grid*/
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.kartu { /*mengatur layout keunggulan seperti kartu*/
+    background: white;
+    padding: 40px 30px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+}
+
+.kartu:hover { /*style jika ada cursor yang menimpa div kartu*/
+    transform: translateY(-8px);
+    box-shadow: 0 8px 25px rgba(102, 126, 234, 0.15);
+}
+
+.keunggulan-icon { /*icon dari keunggulannya*/
+    font-size: 3em;
+    margin-bottom: 15px;
+}
+
+.kartu h3 {/*mengatur teks heading 3*/
+    font-size: 1.3em;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.kartu p { /*mengatur teks paragraf*/
+    color: #666;
+    line-height: 1.6;
+}
+
+.perkenalan .menu { /*mengatur agar letak elemen di div menu bisa bergerak */
+    display: flex;
+
+}
+.perkenalan .menu img{ /*mengatur gambar makanan vektor junkfood*/
+    object-fit:contain;
+    object-position: center;
+    display: flex;
+    flex: 1;
+    border-radius: 10px;
+}
+
+.kontak h1{ /*mengatur teks pada heading 1*/
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 60px;
+    color: #333;
+}
+
+.sosial{ /*mengatur kontak sosial media*/
+    display: flex; /* membuat socials bisa diatur letak sehingga mudah diletakkan */
+    gap: 20px; /*  mengatur jarak dengan elemen lain */ 
+    font-size: 60px;
+    justify-content: center;
+    align-items: center;
+    
+}

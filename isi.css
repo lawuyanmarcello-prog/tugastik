@@ -1,0 +1,246 @@
+html{ /*style untuk seluruh html*/
+    scroll-behavior: smooth; /*ngebuat scroll smooth, ga ngedet2*/
+    display: flex; /*display flex agar elemen-elemen bisa digerakan */
+    justify-content: center;/*  rata tengah  */
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); /*warna gradien untuk background html*/
+    min-height: 100vh; /*tinggi minimum html*/
+}
+
+body{ /*style di body*/
+    width: 90%; /*mengatur width dari body */
+    display: flex; /*display flex agar elemen-elemen bisa digerakan*/
+    flex-direction: column;/*mengatur agar display flex mengarah ke kolom*/
+    align-items: center;/*mengatur konten-konten ada di tengah */ 
+    border-radius: 15px; /*mengatur agar ujung border ga lancip*/
+    background: linear-gradient(180deg, #ffe5f0 0%, #ffb3d9 100%); /*warna gradien dari body*/
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1); /*menambahkan shadow*/
+    padding: 20px; /*mengatur padding body*/
+}
+
+h1{
+    text-align: center; /*mengatur teks align ke tengah*/
+    display: flex;/*mengatur agar h1 bisa diatur letaknya*/
+    justify-content: center;/*membuat h1 rata tengah*/
+    width: 100%; /*mengatur width h1*/
+    color: #764ba2; /*ubah warna teks h1*/
+    font-size: 2.5em; /*ngatur ukuran font h1*/
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); /*menambahkan shadow pada teks h1*/
+    margin-top: 20px; /*memberi margin atas pada h1*/
+}
+
+*{
+    padding: 5px; /*ngatur padding semua elemen html*/
+    margin: 5px; /*ngatur margin semua elemen html*/
+    box-sizing: border-box; 
+}
+
+.section-title img{
+    width: 175px;
+    height: 175px;
+}
+
+.paket {
+    display: flex; /*membuat div paket mudah diatur letaknya*/
+    justify-content: center; /*membuat div paket rata tengah*/
+    align-items: center; /*membuat div paket terletak di tengah*/
+    width: 100%; /*mengatur width dari div paket*/
+    flex-wrap: wrap; /*div paket akan dipaksa turun ke baris baru kalo engga muat*/
+    margin: 20px 0; /*memberi margin div paket*/
+}
+
+.yanas{ /*paket ayam nasi*/
+    display: flex; /*membuat div paket mudah diatur letaknya*/
+    flex-direction: column; /*mengatur arah flex menjadi kolom*/
+    align-items: center; /*membuat div yanas rata tengah pada y-axis*/
+    text-align: center; /*membuat seluruh teks rata tengah*/
+    background: white; /*bekgron warna putih*/
+    border-radius: 12px; /*agar engga lancip, jadi ada lengkunganny*/
+    padding: 15px;/*memberi padding pada div yanas*/
+    box-shadow: 0 4px 15px rgba(118, 75, 162, 0.2); /*memberi shadow pada box*/
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /*memberi sedikit transisi pada div yanas*/
+}
+
+.yanas:hover{ /*div yanas kalo ada cursor yg ke halamanny*/
+    transform: translateY(-5px); /*mengubah bentuk jadi sedikit ke atas*/
+    box-shadow: 0 8px 25px rgba(118, 75, 162, 0.3); /*memberi shadow box*/
+}
+
+.yanas img{/*mengatur warna pada div yanas*/
+    height: 150px; /*mengatur tinggi gambar*/
+    width: 150px; /*mengatur panjang gambar*/
+    object-fit: cover; /*mengatur bentuk gambarnya agar memenuhi*/
+    object-position: center; /*mengubah agar posisi gambar objek dari tengah*/
+    border-radius: 10px; /*agar gambar tidak lancip*/
+    margin-bottom: 10px; /*memberi margin bawah*/
+} 
+
+.makanan-satuan{ /*div makanan-satuan*/
+    display: flex; /*mengatur agar elemen di div makanan-satuan mudah diatur letaknya*/
+    justify-content: center; /*membuat seluruh elemen di div makanan-satuan rata tengah*/
+    align-items: center; /*membuat seluruh elemen di div makanan-satuan berletak di tengah*/
+    width: 100%;/*mengatur width pada div makanan-satuan*/
+    flex-wrap: wrap;/*buat kalo ga cukup di 1 baris, akan membuat baris baru*/
+    margin: 20px 0; /*memberi margin*/
+}
+
+.satuan{ 
+    display: flex; /*mengatur agar elemen di div satuan bisa diatur letaknya*/
+    flex-direction: column; /*mengatur arah flex menjadi kolom*/
+    align-items: center; /*membuat seluruh elemennya berada di tengah*/
+    text-align: center;
+    background: white; /*mengatur background*/
+    border-radius: 12px; /*mengatur agar tidak lancip pada ujung border*/
+    padding: 15px; /*memberi padding*/
+    box-shadow: 0 4px 15px rgba(118, 75, 162, 0.2); /*memberi shadow pada box*/
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /*memberi efek transisi yang sama seperti makanan-satuan*/
+}
+
+.satuan:hover{ /*apa yg terjadi apabila div satuan ada kursor yang dekat*/
+    transform: translateY(-5px); /*objeknya akan berubah sedikit naik*/
+    box-shadow: 0 8px 25px rgba(118, 75, 162, 0.3); /*menambah bayangan box*/
+}
+
+.makanan-satuan img{ /*mengatur gambar pada halaman makanan-satuan*/
+    height: 200px; /*mengatur tinggi*/
+    width: 200px; /*mengatur panjang */
+    object-fit: cover; /*membuat objek gambar memenuhi img*/
+    object-position: center; /*membuat objek gambar berposisi di tengah, tidak dari kanan atau kiri*/
+    border-radius: 10px; /*agar border ujungnya tidak lancip*/
+    margin-bottom: 10px; /*memberikan margin bawah*/
+}
+
+.pencuci-mulut{ /*mengatur div pencuci-mulut*/
+    display: flex; /*membuat halaman pencuci-mulut mudah diatur letaknya*/
+    justify-content: center; /*membuat rata tengah */
+    align-items: center; /*membuat elemen2 terletak di tengah*/
+    width: 100%; /*memgatur lebar*/
+    flex-wrap: wrap; /*memaksa elemen pada halaman pencuci-mulut akan berada di baris bawah jika tidak muat pada 1 baris*/
+    margin: 20px 0; /*memberi margin*/
+}
+
+.enak{ /*mengatur halaman enak*/
+    display: flex; /*mengatur agar letaknya mudah diatur*/
+    flex-direction: column; /*membuat arah flex menjadi vertikal/kolom*/
+    align-items: center; /*membuat semua elemen di halaman ini berada di tengah*/
+    text-align: center; /*membuat semua teks rata tengah*/
+    background: white; /*warna bekgron*/
+    border-radius: 12px; /*memberi lengkungan pada ujung border*/
+    padding: 15px; /*memberi padding*/
+    box-shadow: 0 4px 15px rgba(118, 75, 162, 0.2); /*memberi bayangan pada box*/
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /*memberi efek transisi*/
+}
+
+.enak:hover{ /*yg terjadi apabila ada kursor dekat halaman enak*/
+    transform: translateY(-5px); /*semuanya sedikit naik*/
+    box-shadow: 0 8px 25px rgba(118, 75, 162, 0.3); /*memberi efek shadow */
+}
+
+.enak img{ /*mengatur gambar*/
+    height: 150px; /*mengatur tinggi*/
+    width: 150px; /*mengatur lebar*/
+    object-fit: cover; /*membuat objek gambar fit seluruhnya*/
+    object-position: center; /*membuat objek ada di tengah*/
+    border-radius: 10px; /*agar ujung border tidak lancip*/
+    margin-bottom: 10px; /*memberi margin bawah*/
+}
+
+.minuman{ /*mengatur semua elemen pada halaman minuman*/
+    display: flex; /*agar mudah diatur letaknya*/
+    justify-content: center; /*rata tengah */
+    align-items: center; /*agar letaknya di tengah*/
+    width: 100%; /*mengatur lebar*/
+    flex-wrap: wrap; /*maksa semua elemen agar berada di baris barus kalau tidak muat pada baris tertentu*/
+    margin: 20px 0; /*mengatur margin*/
+}
+
+.minum{ /*mengatur semua elemen di halaman minum*/
+    display: flex; /*agar mudah diatur letak elemennya*/
+    flex-direction: column; /*arah flex vertikal*/
+    align-items: center; /*membuat elemen letakny di tengah container*/
+    text-align: center; /*membuat semua teks rata tengah*/
+    background: white; /*warna background putih*/
+    border-radius: 12px; /*agar ada lengkungan pada ujung border*/
+    padding: 15px; /*memberi padding*/
+    box-shadow: 0 4px 15px rgba(118, 75, 162, 0.2); /*memberi warna shadow pada box*/
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /*memberi sedikit transisi*/
+}
+
+.minum:hover{ /*kalau ada cursor yang dekat*/
+    transform: translateY(-5px); /*membuat semua elemenny naik sedikit*/
+    box-shadow: 0 8px 25px rgba(118, 75, 162, 0.3); /*menambahkan warna shadow pada box*/
+}
+
+.minum img{ /*mengatur gambar */
+    height: 150px; /*mengatur tinggi*/
+    width: 150px; /*mengatur lebar*/
+    object-fit: cover; /*mengatur agar objek gambar penuh*/
+    object-position: center; /*agar objek gambar mulai dari tengah*/
+    border-radius: 10px; /*memberi lengkungan pada ujung border*/
+    margin-bottom: 10px; /*memberi margin-bottom*/
+}
+
+.harga{ /*mengatur paragraf harga*/
+    font-weight: bold; /*agar bold*/
+    color: #764ba2; /*agar warna teksny ungu*/
+    font-size: 1.1em; /*mengatur ukuran teks*/
+}
+
+input[type="number"]{ /*mengatur input yang tipenya angka yang bisa diatur */
+    width: 70px; /*ukuran lebar*/
+    padding: 8px; /*memberi padding*/
+    border: 2px solid #667eea; /*warna border*/
+    border-radius: 8px; /*agar tidak lancip pada ujung border*/
+    font-size: 1em; /*mengatur ukuran font*/
+    transition: border-color 0.3s ease; /*memberi transisi pada border*/
+}
+
+input[type="number"]:focus{ /*yang terjadi ketika diklik*/
+    outline: none; /*outlinenya tidak ada*/
+    border-color: #764ba2; /*warna border masih sama*/
+    box-shadow: 0 0 10px rgba(118, 75, 162, 0.3); /*memberi bayangan pada box*/
+}
+
+p{ /*mengatur semua paragraf / p*/
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); /*semua backgroundny warnanya gradien ungu*/
+    border-radius: 8px; /*agar engga terlalu lancip ujung bordernya*/
+    font-family: 'Arial', sans-serif; /*fontnya arial*/
+    color: orange; /*warna fontnya oranye*/
+    font-weight: bold; /*agar fontnya bold / tebel*/
+    padding: 8px 12px; /*memberi padding */
+    margin: 5px 0; /*memberi margin*/
+}
+
+
+
+.price{/*mengatur span price*/
+    color: yellow; /*warnanya kuning buat harganya*/
+    font-weight: bold; /*fontnya bold / tebel*/
+}
+
+button{ /*mengatur tombol*/
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); /*memberi gradien ungu*/
+    color: white; /*warna font putih*/
+    border: none; /*tidak ada border*/
+    padding: 15px 50px; /*memberi padding*/
+    font-size: 1.2em; /*mengatur ukuran font*/
+    font-weight: bold; /*membuat font tebel*/
+    border-radius: 50px; /*memberikan bentuk seperti oval*/
+    cursor: pointer; /*kalau ada kursor, membuat bentuk kursornya pointer*/
+    margin: 20px 0; /*memberi margin*/
+    box-shadow: 0 4px 15px rgba(118, 75, 162, 0.4); /*memberi bayangan pada box*/
+    transition: all 0.3s ease; /*efek transisi*/
+    text-transform: uppercase; /*semua teksnya kapital*/
+    letter-spacing: 1px; /*memberikan spacing pada letter*/
+}
+
+button:hover{ /*kalau ada mouse yang ada di atas button*/
+    transform: translateY(-3px); /*buttonnya akan naik sedikit*/
+    box-shadow: 0 8px 25px rgba(118, 75, 162, 0.6); /*memberikan bayangan ungu*/
+}
+
+button:active{ /*efek tombol saat ditekan*/
+    transform: translateY(-1px); /*efek bentuk pada Y itu -1px / 1px ke atas*/
+    box-shadow: 0 4px 15px rgba(118, 75, 162, 0.4); /*memberikan bayangan pada box*/
+}
+
+/*kelar*/

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHEVELO</title> <!--title-->
+    <link rel="stylesheet" href="isi.css"><!--link ke style isi-->
+</head>
+<body>
+    <!-- Header Total -->
+    <h1>TOTAL = Rp <span id="totalAmount">0</span></h1>
+
+    <button onclick="showalert()">PESAN</button>
+    <!-- Paket Bundling -->
+    <section class="section-title"><img src="logo.png"></section>
+    <div class="paket">
+        <div class="yanas">
+            <img src="yanas.jpg" alt="YaNas 1"><br><!--gambar -->
+            <p>YaNas 1</p> <<!--nama paket-->
+            <p class="harga">Rp <span class="price">30000</span></p>
+            <input type="number" min="0" value="0" class="quantity">
+        </div>
+        <div class="yanas">
+            <img src="yanas 2.jpg" alt="YaNas 2"><br><!--gambar -->
+            <p>YaNas 2</p><!--nama paket-->
+            <p class="harga">Rp <span class="price">55000</span></p><!--harga-->
+            <input type="number" min="0" value="0" class="quantity"> <!--jumlah-->
+        </div>
+        <div class="yanas">
+            <img src="yanas 3.jpg" alt="YaNas 3"><br><!--gambar -->
+            <p>YaNas 3</p> <!--nama paket-->
+            <p class="harga">Rp <span class="price">70000</span></p> <!--harga-->
+            <input type="number" min="0" value="0" class="quantity"> <!--jumlah-->
+        </div>
+    </div>
+
+    <!-- Makanan Satuan -->
+    <section class="section-title">🍔 MAKANAN UTAMA</section>
+    <div class="makanan-satuan">
+        <div class="satuan">
+            <img src="ayam.jpg" alt="Ayam Goreng Klispi"><br><!--gambar -->
+            <p>Ayam Goreng Klispi</p> <!--nama makanan-->
+            <p class="harga">Rp <span class="price">15000</span></p> <!--harga-->
+            <input type="number" min="0" value="0" class="quantity"> <!--jumlah-->
+        </div>
+        <div class="satuan">
+            <img src="kentang.jpg" alt="Kentangtingtung"><br><!--gambar -->
+            <p>Kentangtingtung</p><!--nama makanan-->
+            <p class="harga">Rp <span class="price">25000</span></p><!--harga-->
+            <input type="number" min="0" value="0" class="quantity"> <!--jumlah-->
+        </div>
+        <div class="satuan">
+            <img src="nasi.jpg" alt="Nasi So Nais"><br><!--gambar -->
+            <p>Nasi So Nais</p><!--nasi-->
+            <p class="harga">Rp <span class="price">5000</span></p><!--harga-->
+            <input type="number" min="0" value="0" class="quantity"> <!--jumlah-->
+        </div>
+        <div class="satuan">
+            <img src="bigbub.jpg" alt="Bigbub"><br><!--gambar -->
+            <p>Bigbub</p> <!--nama bigmek tapi nama lain-->
+            <p class="harga">Rp <span class="price">25000</span></p><!--harga -->
+            <input type="number" min="0" value="0" class="quantity"><!--jumlah yg dibeli-->
+        </div>
+        <div class="satuan">
+            <img src="doublecheese.jpg" alt="Double Cheesebuggeh"><br><!--gambar -->
+            <p>Double Cheesebuggeh</p><!--dabel chisberger-->
+            <p class="harga">Rp <span class="price">30000</span></p><!--harga-->
+            <input type="number" min="0" value="0" class="quantity"> <!--jumlah-->
+        </div>
+        <div class="satuan">
+            <img src="nugget.jpg" alt="NuggetMeks"><br><!--gambar -->
+            <p>NuggetMeks</p><!--nama nugget-->
+            <p class="harga">Rp <span class="price">3000</span> / pc</p><!--harga per pc-->
+            <input type="number" min="0" value="0" class="quantity"><!--jumlah-->
+        </div>
+    </div>
+
+    <!-- Pencuci Mulut -->
+    <section class="section-title">🍰 PENCUCI MULUT</section> <!--judul-->
+    <div class="pencuci-mulut"> <!-- buka halaman pencuci-mulut-->
+        <div class="enak">
+            <img src="sunda.jpg" alt="Chocolate Sunda"><br> <!--gambar -->
+            <p>Chocolate Sunda</p> <!-- nama-->
+            <p class="harga">Rp <span class="price">18000</span></p> <!-- harga-->
+            <input type="number" min="0" value="0" class="quantity"> <!-- jumlah-->
+        </div>
+        <div class="enak">
+            <img src="icecone.jpg" alt="Cor Ice"><br><!--gambar -->
+            <p>Cor Ice</p><!--nama cone ice, tapi cor itu bentuknya kerucut, jadi kerucut es hahahaha -->
+            <p class="harga">Rp <span class="price">14000</span></p> <!--harga-->
+            <input type="number" min="0" value="0" class="quantity"> <!--jumlah-->
+        </div>
+        <div class="enak">
+            <img src="mcflurry.jpg" alt="Es Kacau"><br><!--gambar -->
+            <p>Es Kacau</p><!--flurry = kacau, jadi mcflurry = es kacau-->
+            <p class="harga">Rp <span class="price">20000</span></p> <!--harga-->
+            <input type="number" min="0" value="0" class="quantity"> <!--jumlah--> 
+        </div>
+    </div>
+
+    <!-- Minuman -->
+    <section class="section-title">🥤 MINUMAN</section>
+    <div class="minuman">
+        <div class="minum">
+            <img src="fanta.jpg" alt="Fanta"><br><!--gambar -->
+            <p>Fanta</p><!--nama minuman-->
+            <p class="harga">Rp <span class="price">10000</span></p><!--harga fanta-->
+            <input type="number" min="0" value="0" class="quantity"> <!--jumlah dibeli-->
+        </div>
+        <div class="minum">
+            <img src="sprite.jpg" alt="Sprite"><br><!--gambar -->
+            <p>Sprite</p><!--nama minum-->
+            <p class="harga">Rp <span class="price">10000</span></p><!--harga sprite-->
+            <input type="number" min="0" value="0" class="quantity"><!--jumlah dibeli-->
+        </div>
+        <div class="minum">
+            <img src="coca.jpg" alt="Coca-cola"><br><!--gambar -->
+            <p>Coca-cola</p><!--nama minuman-->
+            <p class="harga">Rp <span class="price">10000</span></p><!--harga-->
+            <input type="number" min="0" value="0" class="quantity"><!--jumlah-->
+        </div>
+        <div class="minum">
+            <img src="lemontea.jpg" alt="Lemon Tea"><br><!--gambar -->
+            <p>Lemon Tea</p><!--nama minum-->
+            <p class="harga">Rp <span class="price">8000</span></p><!--harga-->
+            <input type="number" min="0" value="0" class="quantity"> <!--jumlah-->
+        </div>
+        <div class="minum">
+            <img src="le mineral.jpg" alt="Air Mineral"><br><!--gambar -->
+            <p>Air Mineral</p><!--nama minum-->
+            <p class="harga">Rp <span class="price">5000</span></p><!--harga-->
+            <input type="number" min="0" value="0" class="quantity"><!--jumlah-->
+        </div>
+    </div><!--tutup div minuman -->
+
+    <script src="isi.js"></script> <!--link ke js-->
+</body>
+</html>

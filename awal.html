@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html> <!-- pembuka html-->
+<head> <!-- pembuka head-->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>SHEVELO</title><!-- title di tab halamanny-->
+	<link rel="stylesheet" type="text/css" href="style.css"> <!-- agar ada link dari html dengan css-->
+</head><!-- penutup head html-->
+<body> <!-- pembuka body-->
+	<section> <!-- pembuka section-->
+		<div class="login-box"> <!-- pembuka div berkelas login-box-->
+			<form id="loginForm" onsubmit="login()"> <!-- pembuka form dengan id loginForm dan onsubmit login() untuk di java script-->
+				<h2>Login</h2> <!-- pembuka header2-->
+				<div class="input-box"> <!-- pembuka div bernama input-box-->
+					<span class="icon"><ion-icon name="mail-outline"></ion-icon></span> <!-- hanya icon email dari ion-icon -->
+					<input type="email" placeholder="Email" required><!--  input untuk email (harus)-->
+					<label>Email</label> <!-- memberikan label-->
+				</div> <!-- penutup div bernama input-box-->
+				<div class="input-box"> <!-- pembuka div bernama input-box sama kayak atasny-->
+					<span class="icon"><ion-icon name="lock-closed-outline"></ion-icon></span> <!-- icon untuk password-->
+					<input type="password" placeholder="Password"required> <!-- input untuk password (harus) -->
+					<label>Password</label> <!-- memberikan label-->
+				</div><!-- penutup div bernama input-box-->
+				<div class="remember-forgot"> <!-- pembuka div halaman bernama remember-forget -->
+					<label><input type="checkbox">Remember me</label> 
+				</div><!-- penutup div halaman bernama remember-forget-->
+				<button type="submit">Login</button> <!-- membuat button dengan tipe untuk submit bertulisan login-->
+			</form> <!-- penutup form-->
+		</div> <!-- penutup div berkelas login-box-->
+		<div class="socials"> <!-- pembuka div halaman sosial kelas bernama socials-->
+			<a href="#" class="whatsapp-link"><ion-icon name="logo-whatsapp"></ion-icon></a> <!-- icon whatsapp, dan kalo diklik akan muncul alert dari javascript-->
+			<a href="https://youtu.be/xvFZjo5PgG0?si=U2LtLkGUn7TuJOqa"><ion-icon name="logo-youtube"></ion-icon></a> <!-- icon youtube, dan kalo diklik akan mengarah ke link youtube yg dituju-->
+			<a href="https://www.tiktok.com/@sabunsociety"><ion-icon name="logo-tiktok"></ion-icon></a> <!-- icon tiktok, dan kalo diklik akan mengarah ke link tiktok (sabunsociety)-->
+			<a href="https://www.instagram.com/sabun.society/?igsh=aWtkbXp5enZkODh4#"><ion-icon name="logo-instagram"></ion-icon></a> <!-- icon instagram, dan kalo diklik akan mengarah ke link instagram (sabunsocienty)-->
+		</div><!-- penutup div halaman socials-->
+		
+	</section><!-- penutup section-->
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script> <!-- script untuk ionicon(tempat diambil icon-icon)-->
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script> <!-- sama dengan atasny-->
+<script src="script.js"></script> <!-- mengkoneksikan html dengan javascript-->
+</body><!-- penutup body-->
+</html><!-- penutup html-->

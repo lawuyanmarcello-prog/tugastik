@@ -1,0 +1,161 @@
+*{ /*  mengatur seluruh elemen  */
+    margin: 0; /*   mengatur margin seluruh elemen */
+    padding: 0; /*  mengatur padding seluruh elemen  */
+    box-sizing: border-box; /*  mengatur agar seluruh elemen ada border  */
+    font-family: 'Poppins', sans-serif; /*   mengatur seluruh font pada html */
+
+}
+section{ /*  mengatur keseluruhan section  */
+    display: flex; /*   membuat section bisa diatur  */
+    justify-content: center; /*  membuat center pada X axis border section  */
+    align-items: center; /*  membuat center pada Y axis border section  */
+    width: 100%; /*  mengatur lebar menjadi penuh  */
+    height: 100vh; /*  mengatur ketinggian menjadi seluruh hmtl  */
+    background: url('bunga.jpg') no-repeat; /*  memberi gambar pada background dan tidak ada lebih dari 1 gambar pada background*/
+    background-size: cover;  /*  membuat gambar background meng-cover seluruhnya  */
+    background-position: center; /*  membuat agar gambar background tetap di tengah  */
+    animation: animateBg 5s linear infinite; /*  memberi animasi   */
+}
+
+@keyframes animateBg{ /*  mengatur hue pada background agar seperti warna warni  */
+    0%, 100%{
+        filter: hue-rotate(0deg);
+    }
+
+    25%{
+        filter: hue-rotate(120deg);
+    }
+
+    50%{
+        filter: hue-rotate(160deg);
+    }
+
+    75%{
+        filter: hue-rotate(240deg);
+    }
+}
+.login-box{ /*   mengatur keseluruhan halaman login-box */
+    position: relative;
+    width: 400px; /*  mengatur lebar halaman login-box  */
+    height: 450px; /*  mengatur tinggi halaman login-box  */
+    background: transparent; /*  membuat background dari halaman login-box menjadi transparan  */
+    border: 2px solid rgba(255, 255, 255, .5); /*  memberi border dengan warna abu2  */
+    border-radius: 20px; /*  memberi curve pada login-box  */
+    display: flex; /*  membuat halaman login-box mudah diatur  */
+    justify-content: center; /*  membuat halaman login-box menjadi di tengah pada axis X border  */
+    align-items: center; /*  membuat halaman login-box menjadi di tengah pada axis Y border  */
+    backdrop-filter: blur(15px); /*  memberikan blur   */
+}
+
+h2{ /*  mengatur teks header2  */
+    font-size: 2em;  /*  mengatur ukuran teks  */
+    color: #fff;
+    text-align: center; /*  mengalign teks menjadi di tengah  */
+
+}
+
+.input-box{ /*  mengatur keseluruhan halaman input-box  */
+    position: relative;
+    width: 310px; /*  mengatur kelebaran pada halaman input-box  */
+    margin: 30px 0; /*  mengatur margin pada halaman input-box  */
+    border-bottom: 2px solid #fff; /*  memberikan border di bawahnya  */
+}
+
+.input-box label{ /*  mengatur label pada halaman input-box  */
+    position: absolute; /*  mengatur posisi label  */
+    top: 50%;  /*  memberikan jeda dengan atasnya  */
+    left: 5px; /*  memberikan jeda dengan kirinya  */
+    transform: translateY(-50%); /*  memberikan efek melayang  */
+    font-size: 1em; /*  mengatur size font label  */
+    color: #fff; /*  memberikan warna putih pada label  */
+    pointer-events: none; /*  apabila cursor berada di label, tidak terjadi apa-apa  */
+    transition: .5s; /*  memberikan waktu transisi  */
+}
+
+.input-box input:focus ~ label,
+.input-box input:valid ~ label{  /*  mengatur apabila inputnya diklik akan seperti mengembang/naik  */
+    top: -5px;
+    color: #03a9f4;
+    font-size: 0.8em;
+}
+
+.input-box input{ /*  mengatur input di halaman input-box dari letak dan warnanya */
+    width: 100%; /*   mengatur kelebaran pada input */
+    height: 50px; /*  mengatur ketinggian pada input  */
+    background: transparent; /*  membuat warna background input transparan  */
+    border: none; /*  membuat input tidak memiliki border  */
+    outline: none; /*  membuat input tidak memiliki outline  */
+    font-size: 1em; /*  mengatur ukuran teks input  */
+    color: #fff; /*  mengatur warna teks input  */
+    padding: 0 8px 0 5px; /*  mengatur padding input  */
+}
+
+
+
+.input-box .icon { /*  mengatur letak icon */
+    position: absolute;
+    right: 8px;
+    color: #fff;
+    font-size: 1.2em;
+    line-height: 57px;
+}
+
+.remember-forgot{ /*  mengatur bentuk dan lokasi remember men  */
+    margin: -15px 0 15px ;
+    font-size: 0.9em;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+}
+
+.remember-forgot label input{ /*  memberi margin pada label input di remember me */
+    margin-right: 3px;
+}
+
+.remember-forgot a{ /*  setting awal dari sebelum ada kursor ke remember me tanpa ada underline  */
+    color: #fff;
+    text-decoration: none; 
+}
+
+.remember-forgot a:hover{ /*  memberi underline pada saat ada kursor ke remember me */
+    text-decoration: underline;
+}
+
+button{ /*  mengatur button dari bentuknya dan letaknya */
+    width: 100%; /*  mengatur kelebaran button */
+    height: 40px; /*  mengatur ketinggian button  */
+    background: #fff; /*  memberikan background warna putih di button */
+    border: none; /*  tidak memberikan border pada button  */
+    outline: none; /*  membuat button tidak memiliki outline  */
+    border-radius: 40px; /*  memberikan curve dari button  */ 
+    font-size: 1em; /*  mengatur size dari fontnya  */
+    color: #000; /*  memberikan warna teks di Login  */
+    cursor: pointer; /*  mengatur cursor saat berada di button  */
+    font-weight: 500; /*  mengatur ketebalan font  */
+}
+button:hover{ /*  mengatur apabila ada kursor ke button */
+    background: #03a9f4; /*  mengatur warna background  */
+    color: #fff; /*  mengatur warna teksnya  */
+}
+
+@media (max-width: 360px){ /*  media dengan maksimum lebar 360px */
+    .login-box{ /*   mengatur halaman login-box*/
+        width: 100%; /*  mengatur kelebarannya  */
+        height: 100vh; /*  mengatur ketinggian login-box  */
+        border: none; /*  membuat login-box tidak memiliki border  */
+        border-radius: 0;
+    }
+    .input-box{ /*  mengatur halaman input-box */
+        width: 290px; /*  mengatur kelebarannya  */
+    }
+}     
+
+/* style untuk halaman socials*/
+.socials{   
+    position: absolute; /*  mengatur posisi socials menjadi absolute  */
+    display: flex; /* membuat socials bisa diatur letak sehingga mudah diletakkan */
+    gap: 20px; /*  mengatur jarak dengan elemen lain */
+    margin-top: 350px; /*   mengatur margin atasny*/
+    
+}
+
